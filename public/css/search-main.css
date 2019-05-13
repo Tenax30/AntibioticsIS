@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "Ubuntu";
+	src: url(../fonts/Ubuntu.ttf) format("truetype");
+}
+
+body, html, main {
+	height: 100%;
+}
+
+body {
+	background-color: #4DAECD;
+	margin: 0;
+}
+
+
+/*.logo {
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+}*/
+
+.flex-containter {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-block {
+	font-family: "Ubuntu";
+	margin: 0 auto;
+	text-align: center;
+}
+
+.search-block img {
+	vertical-align: -18px;
+	width: 50px;
+}
+
+#search-btn {
+	background-color: #2E87A5;
+	color: #FFF;
+	padding: 10px 15px;
+	margin-left: 5px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#search-btn:hover{
+	background-color: #FF5E96;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#search-btn:active{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transform: translateY(1.5px);
+}
+
+#search-field {
+	height: 27px;
+	width: 300px;
+	font-size: 13px;
+	color: #616161;
+}
+

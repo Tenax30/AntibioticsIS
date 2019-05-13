@@ -1,0 +1,161 @@
+@font-face {
+	font-family: "Ubuntu";
+	src: url(../fonts/Ubuntu.ttf) format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+html, body {
+	height: 100%;
+	font-family: "Ubuntu", Arial;
+}
+
+body {
+	background-color: #4DAECD;
+	margin: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	/*display: block;*/
+	background-color: #FFF;
+	position: relative;
+	width: 1200px;
+	min-height: 700px;
+/* 	height: 2000px; */
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	margin-bottom: 50px;
+	margin-top: 50px;
+	padding-bottom: 50px;
+}
+
+header {
+	background-color: rgba(33, 97, 118, 0.5);
+	height: 70px;
+	position: relative;
+}
+
+header .avatar {
+	background-color: #2B7D99;
+	float: left;
+	padding: 13px 23px;
+	border-radius: 100px;
+	border: 1px solid #fff;
+	text-align: center;
+	margin-top: 7px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+header .avatar:hover {
+	background-color: #349ABC;
+}
+
+header .avatar p {
+	margin: 28% auto;
+	font-size: 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.search-form {
+	text-align: center;
+	/*background-color: #2D85A2;*/
+	/*padding-top: 15px;*/
+	display: inline-block;
+	/*margin-left: 40px;*/
+	width: 90%;
+}
+
+.search-form img {
+	float: right;
+	/*margin: 0;*/
+	width: 50px;
+	margin-right: -30px;
+	margin-top: 5px;
+	/*width: 15%;*/
+}
+
+#search-field {
+	margin-left: 10px;
+	margin-top: 18px;
+	float: left;
+	width: 60%;
+	/*margin-left: 150px;*/
+	height: 27px;
+	font-size: 13px;
+	color: #616161;
+}
+
+#search-btn{
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	background-color: #48ABCC;
+	color: #FFF;
+	padding: 10px 15px;
+	/*margin-left: 5px;*/
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+}
+
+#search-btn:hover{
+	background-color: #FF5E96;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#search-btn:active{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transform: translateY(1.5px);
+}
+
+main {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+main h1 {
+	color: #B77700;
+	font-size: 25px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #9B9B9B;
+}
+
+a {
+	text-decoration: underline;
+}
+
+a:hover {
+	color: orange;
+}
+
+table.result {
+	width: 90%;
+	margin: auto;
+	border-spacing: 40px 10px;
+	border-collapse: collapse;
+	/*border: 1px solid #8F8F8F;*/
+}
+
+table.result tr {
+	border-bottom: 1px solid #D2D2D2;
+}
+
+table.result td {
+	text-align: center;
+}
+
+table.result img {
+	width: 150px;
+}
+
+.copyright {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	background-color: #2D85A2; 
+	bottom: 0;
+	height: 50px;
+}

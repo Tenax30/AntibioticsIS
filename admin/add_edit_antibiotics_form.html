@@ -1,0 +1,45 @@
+<h2>Противогрибковые антибиотики</h2>
+<form class='edit-form'>
+	<div class='property'>
+		<label for='name'>Название:</label>
+		<p><input id='name' name='name' type='text' value='%name%'></p>
+	</div>
+
+	<div class='property'>
+		<label for='type'>Тип:</label>
+		<p><select id = 'type' name='type'>
+			<option value='Полиен'>Полиен</option>
+			<option value='Азол'>Азол</option>
+			<option value='Аллиламин'>Аллиламин</option>
+			<option value='Эхинокандин'>Эхинокандин</option>
+			<option value='Другая группа'>Другая группа</option>
+		</select>
+	</div>
+
+	<div class='property'>
+		<label for='formula'>Структурная формула:</label>
+		<p><input id='formula' name='formula' type='text' value='%formula%'></p>
+	</div>
+
+	<div class='property'>
+		<label for='smiles'>SMILES:</label>
+		<p><input id='smiles' name='smiles' type='text' value='%smiles%'></p>
+	</div>
+
+	<div class='property'>
+		<label for='structure-2D'>2D Структура:</label>
+		<p><input id='structure-2D' name='structure-2D' type='text' ></p>
+	</div>
+
+	<div class='property'>
+		<label for='model'>3D Структура:</label>
+		<p><input id='model' name='model' type='text' value='%model%'></p>
+	</div>
+
+	<div class='property'>
+		<label for='description'>Описание:</label>
+		<p><textarea id='description' name='description'>%description%</textarea></p>
+	</div>
+
+	<button class='apply-btn' type="button" onclick='addEditElement(%database%, %id%)'>ОК</button>
+</form>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Информационный портал</title>
+	<link rel="stylesheet" href="public/css/reset.css">
+	<link rel="stylesheet" href="public/css/search-main.css">
+
+</head>
+<body>
+	<main>
+		<!-- <img class="logo" src="public/images/logo.jpg"> -->
+		<div class="flex-containter">
+			<div class="search-block">
+				<h2>Поиск антибиотиков</h2>
+				<a href="#"><img src="public/images/search.png" alt=""></a>
+				<input type="text" id="search-field" name="search-field">
+				<input type="button" id="search-btn" name="search-btn" value="Найти">
+			</div>
+		</div>
+	</main>
+
+	<!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<script type="text/javascript" src="public/scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="public/scripts/search.js"></script>
+
+	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
+</body>
+</html>

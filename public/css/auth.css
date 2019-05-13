@@ -1,0 +1,168 @@
+@font-face {
+	font-family: "Bebas Neue";
+	src: url(../fonts/Bebas-Neue.ttf) format("truetype");
+	src: url(../fonts/Bebas-Neue.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Ubuntu";
+	src: url(../fonts/Ubuntu.ttf) format("truetype");
+}
+
+form {
+	background-color: white;
+	width: 280px;
+	border: 10px solid #459EB9;
+	font-family: "Bebas Neue", Arial, sans-serif;
+	font-size: 21px;
+	margin-top: 20px;
+}
+
+body {
+	/*letter-spacing: 1px;*/
+	background-color: #4DAECD;
+	display: flex;
+	align-items: center;
+    align-content: space-between; 
+    justify-content: center; 
+    flex-direction: column;
+    overflow: auto;
+}
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	margin-top: 0;
+}
+
+.logo {
+	/*margin-bottom: 30px;*/
+}
+
+.message {
+	/*text-align: center;*/
+	font-family: "Ubuntu", Arial, sans-serif;
+	font-size: 13px;
+	color: #4A4C49;
+	margin: 0;
+	padding: 15px 10px;
+	width: 280px;
+	background-color: #FFDCE0;
+	border-radius: 5px;
+	margin-bottom: 0px;
+	border: 1px solid #459EB9;
+}
+
+.switcher {
+	width: auto;
+    height: auto;
+    cursor: auto;
+}
+
+.switcher li {
+	float: left;
+	width: 50%;
+	height: 50px;
+	text-align: center;
+	background-color: #A6D6E6;
+	cursor: pointer;
+}
+
+.switcher li:hover {
+	background-color: #D2EBF2;
+}
+.switcher a {
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #4A4C49;
+  padding-left: 5%;
+  padding-right: 5%;
+  /*background: #292a34;*/
+  /*border-top: 1px solid #3b3d4b;*/
+}
+
+.switcher li.selected {
+	background-color: #FFF;
+}
+
+input[type=text], 
+input[type=email],
+input[type=password] {
+	font-family: "Ubuntu", Arial, sans-serif;
+	font-size: 15px;
+	width: 85%;
+	height: 25px;
+	margin-top: 20px;
+}
+
+input[type=submit] {
+	font-family: "Bebas Neue", Arial, sans-serif;
+	font-size: 21px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFF;
+	width: 85%;
+	background-color: #13B9D5;
+	padding: 15px 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+input[type=submit]:hover {
+	background-color: #84C7DD;
+}
+
+input[type=submit]:active {
+	transform: translateY(-2px);
+	/*box-shadow: 0 3px 0 #00823F;*/
+}
+
+#sign-in,
+#sign-up {
+	text-align: center;
+}
+
+.forgot-pass-form {
+	text-align: center;
+	margin-top: 15px;
+	font-family: "Bebas Neue", Arial, sans-serif;
+	font-size: 21px;
+}
+
+.forgot-pass-form a {
+	color: #0A4954;
+}
+
+.forgot-pass-form a:hover {
+	color: lightblue;
+}
+
+.forgot-pass-form a:active {
+	color: #FFF;
+}
+
+#sign-in, #sign-up, .message {
+  display: none;
+}
+#sign-in.is-selected, #sign-up.is-selected,
+.message.is-selected {
+  display: block;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+ 
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+ 
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+ 
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}

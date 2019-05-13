@@ -1,0 +1,196 @@
+@font-face {
+	font-family: "Ubuntu";
+	src: url(../fonts/Ubuntu.ttf) format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Ubuntu", Arial;
+}
+
+html, body, main {
+	height: 100%;
+}
+
+li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: 55px;
+	background-color: #15304D;
+	padding: 5px;
+	margin: 0;
+}
+
+header .logo {
+	width: 50px;
+}
+
+header .project-name {
+	margin-left: 15px;
+}
+
+header .info-label {
+	display: inline;
+	position: relative;
+	float: right;
+	top: 15px;
+	right: 20px;
+	font-family: "Ubuntu", Arial;
+	font-size: 20px;
+	color: white;
+}
+
+header .avatar {
+	background-color: #A8C7E8;
+	float: right;
+	padding: 12px 21px;
+	border-radius: 100px;
+	border: 2px solid #fff;
+	margin-right: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+header .avatar:hover {
+	background-color: #349ABC;
+}
+
+header .avatar p {
+	margin: 28% auto;
+	font-size: 20px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.instruments {
+	float: left;
+	display: inline-block;
+	background-color: #224E7D;
+	width: 250px;
+	height: 100%;
+	min-height: 100%;
+}
+
+.instruments ul li {
+	padding: 5px 10px;
+	font-family: "Ubuntu", Arial;
+	color: white;
+}
+
+.instruments ul li:hover {
+	background-color: #349ABC;
+}
+
+.instruments .icon {
+	width: 32px;
+}
+
+.instruments .instrument-label {
+	position: relative;
+	margin-left: 10px;
+	bottom: 10px;
+}
+
+.setting {
+	display: inline-block;
+	height: 100%;
+	width: calc(100% - 260px);
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.setting h2 {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #9B9B9B;
+}
+
+.setting .icon {
+	width:32px;
+}
+
+.setting .add-button {
+	width: 32px;
+	position: relative;
+	top: 8px;
+	margin-left: 10px;
+
+}
+
+.setting .delete-button {
+	margin-left: 5px;
+}
+
+.setting .main-table {
+	height: 600px;
+	overflow: auto;
+	margin-top: 30px;
+	width: 100%;
+}
+
+.setting .main-table table {
+	width: 100%;
+	border-spacing: 40px 10px;
+	border-collapse: collapse;
+}
+
+.setting table td,
+.setting table th {
+	text-align: center;
+	padding: 10px;
+}
+
+.setting table tr {
+	border-bottom: 1px solid #D2D2D2;
+	border-top: 1px solid #D2D2D2;
+}
+
+.setting .property {
+	margin-bottom: 15px;
+}
+
+.setting .property p {
+	margin-top: 5px;
+}
+
+.setting .property input[type='text']{
+	height: 18px;
+	width: 200px;
+}
+
+.setting .property select{
+	height: 22px;
+	width: 200px;
+}
+
+.setting .property #description {
+	width: 500px;
+	height: 400px;
+	font-size: 15px;
+}
+
+.setting .apply-btn {
+	background-color: #2E87A5;
+	color: #FFF;
+	width: 150px;
+	padding: 10px 15px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.setting .apply-btn:hover{
+	background-color: #FF5E96;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.setting .apply-btn:active{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transform: translateY(1.5px);
+}

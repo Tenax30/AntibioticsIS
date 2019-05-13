@@ -1,0 +1,23 @@
+<h2>Пользователи</h2>
+<form class="edit-form">
+	<div class='property'>
+		<label for='login'>Логин:</label>
+		<p><input id='login' name='login' type='text' value='%login%'></p>
+	</div>
+
+	<div class='property'>
+		<label for='email'>Email:</label>
+		<p><input id='email' name='email' type='text' value='%email%'></p>
+	</div>
+
+	<div class='property'>
+		<label for='type'>Тип:</label>
+		<p><select id = 'type' name='type'>
+			<option value='Admin'>Администратор</option>
+			<option value='User'>Исследователь</option>
+		</select></p>
+	</div>
+
+	<button class='apply-btn' type="button" onclick='addEditElement(%database%, %id%)'>ОК</button>
+
+</form>
